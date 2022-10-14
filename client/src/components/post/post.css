@@ -1,0 +1,100 @@
+.post {
+  width: 283px;
+
+  margin: 20px 19px 20px;
+  padding: 0 10px 70px;
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.postImg {
+  transition: .5s;
+  position: relative;
+  width: 270px;
+  height: 270px;
+  margin: 13px 0 0 13px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.postImg:hover{
+  transform: scale(1.05)
+}
+
+.postInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.postTitle {
+  margin: 10px 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 31px;
+  font-weight: 500;
+  padding: 0 10px
+}
+
+.postDesc {
+  font-family: sans-serif;
+  color: rgb(92, 99, 112);
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+.postPrice {
+  font-family: sans-serif;
+  font-size: 20px;
+  line-height: 54px;
+  font-weight: 500;
+  width: 127px;
+  padding: 0 10px
+}
+
+.btn {
+  height: 40px;
+  width: 123px;
+  font-size: 16px;
+  line-height: 40px;
+  background-color: rgb(255, 105, 0);
+  color: white;
+  user-select: none;
+  border-radius: 9999px;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
+.btn:hover {
+  background-color: rgb(229, 98, 18);
+  color: #fefefe;
+
+}
+
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
